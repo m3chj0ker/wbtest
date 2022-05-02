@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Popup Test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="popup.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <section>
+            <span class="title">Query Details:</span>
+            <form id="QueryInfo">
+                <div>
+                    <label for="url">Site Url:</label>
+                    <input id="url" type="url" placeholder="https://example.com">
+                </div>
+                <div>
+                    <label for="limit">Result Limit:</label>
+                    <input id="limit" type="number" value="700">
+                </div>
+                <div>
+                    <label for="status">Status Code Regex:</label>
+                    <input id="status" type="text" placeholder="e.g. 200">
+                    <input class="smallInput" id="statusCheck" type="checkbox">
+                    <label class="smallLabel" for="statusCheck">Invert</label>
+                </div>
+                <div>
+                    <label for="mimetype">Mimetype Regex:</label>
+                    <input id="mimetype" type="text" placeholder="e.g. ^image\/jpe?g$">
+                    <input class="smallInput" id="mimetypeCheck" type="checkbox">
+                    <label class="smallLabel" for="mimetypeCheck">Invert</label>
+                </div>
+                <div>
+                    <label for="length">Length Regex:</label>
+                    <input id="length" type="text" placeholder="e.g. ^[0-9]{1,4}$">
+                    <input class="smallInput" id="lengthCheck" type="checkbox">
+                    <label class="smallLabel" for="lengthCheck">Invert</label>
+                </div>
+                <div>
+                    <label for="keyword">Keyword Regex:</label>
+                    <input id="keyword" type="text" placeholder="e.g. .*example.*">
+                    <input class="smallInput" id="keywordCheck" type="checkbox">
+                    <label class="smallLabel" for="keywordCheck">Invert</label>
+                </div>
+                <div>
+                    <input id="submit" type="button" value="Submit">
+                </div>
+            </form>
+        </section>    
+        <script src="popup.js"></script>
+    </body>
+</html>

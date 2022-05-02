@@ -1,0 +1,75 @@
+#QueryInfo {
+    display: block;
+    margin-top: 1em;
+}
+
+body {
+    background-color: #440071;
+    width: auto;
+}
+
+div {
+    color: #c069ff
+}
+
+label {
+    display: block;
+    width: auto;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 8;
+}
+
+.smallLabel {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    text-align: left;
+}
+
+.smallInput {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+}
+
+input { 
+    display: block;
+    width: auto;
+    height: 32px;
+    background-color: #c069ff;
+    font-size: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    border: none;
+    margin-bottom: 8px;
+}
+
+input[type=button] {
+    text-align: center;
+    width: auto;
+    display: block;
+}
+
+input[type=number]::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+input:focus {
+    border: #0a84ff;
+}
+
+form {
+    box-sizing: border-box;
+    width: auto;
+}
+
+.title{
+    color: #c069ff;
+    font-size: 22px;
+    font-family: inherit;
+    font-weight: 300;
+    text-align: center;
+}
